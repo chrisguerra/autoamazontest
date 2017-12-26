@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Takeaway search automation test">
+   <!-- <parameter name="browserType" value="chrome"/>
+    <parameter name="appUrl" value="https://www.amazon.com/"/>-->
+    <test name="All test will be run.">
+        <classes>
+            <class name="suite001.TestCase001"/>
+        </classes>
+    </test>
+</suite>
