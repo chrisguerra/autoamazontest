@@ -10,7 +10,7 @@ import org.testng.annotations.Parameters;
 
 public class ConfigBase {
     private static WebDriver driver;
-    protected static String driverPath = "/home/cguerra/drivers/";
+    protected static String driverPath = "./drivers/";
 
     public static WebDriver getDriver(){
         return driver;
@@ -27,6 +27,7 @@ public class ConfigBase {
     }
 
     private WebDriver initFireFoxDriver(String appUrl) {
+        System.setProperty("webdriver.gecko.driver", driverPath + "geckodriver");
         WebDriver driver = new FirefoxDriver();
         driver.manage().window().maximize();
         driver.navigate().to(appUrl);
